@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splendid Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+    <div class="head">
+        <div>
+          <img src="./logo.jpg" alt="logo" />
+        </div>
+        <div class="icon">
+          <div id="facebook-icon" onclick="redirectToFacebook()">
+            <i  class="bi bi-facebook" style="color: blue"></i>
+          </div>
+
+          <div id="instagram-icon" onclick="Instagram()">
+            <i
+            
+              class="bi bi-instagram"
+              style="color: purple"
+            ></i>
+          </div>
+          <div id="twitter-icon" onclick="Twitter()">
+            <i class="bi bi-twitter" style="color: blue"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <marquee behavior="" direction="right"><img src="quuu.jpg" alt=""> </marquee>   
+
+      <div class="place">
+      <div class="left">
+        <h1>Js</h1>
+        <h1>oop</h1>
+      </div>
+
+      <div class="body">
+        <div class="loader"></div>
+        <div class="quiz">
+          <label class="qu" for="qu">Quiz</label>
+          <hr />
+          <h3 id="question">
+            Which one is not an object oriented <br />
+            programming language?
+          </h3>
+
+          <div class="options">
+            <div>
+              <button id="option1" class="button"></button>
+              <button id="option2" class="button"></button>
+            </div>
+            <div>
+              <button id="option3" class="button"></button>
+              <button id="option4" class="button"></button>
+            </div>
+          </div>
+          <hr />
+
+          <p id="progress">Question 1 of 5</p>
+        </div>
+        <div class="scoreDiv">
+          <h2>Your score</h2>
+          <h2 id="score"></h2>
+
+        </div>
+      </div>
+</div>
+
+    </main>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

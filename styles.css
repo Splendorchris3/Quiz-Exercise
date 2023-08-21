@@ -1,0 +1,274 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px; 
+}
+
+.icon  {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+margin: 25px;
+width: 20%;
+}
+
+.logo {
+  display: block;
+}
+
+
+.icon i:hover {
+  color: white;
+}
+
+
+.facebook-icon {
+  margin-right: 20px;
+}
+
+.instagram-icon {
+  margin-right: 15px;
+}
+
+.twitter.icon {
+  margin-right: 10px;
+}
+
+
+
+main {
+
+   
+    background-color: rgb(235, 227, 227);
+    min-height: 120vh;
+
+
+}
+
+.place {
+ display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+img {
+  display: none;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(8, 184, 207);
+    width: 15vw;
+    height: 55vh;
+    border: none;
+}
+
+
+.left h1 {
+    font-size: 105px;
+    line-height: 60px;
+    color: white;
+    margin-top: 50px;
+    
+}
+
+.body {
+     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(ttttt.jpeg);
+    background-size: cover;
+ width: 40vw;
+    height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 10px solid white;
+  border-top: 10px solid blue;
+  margin: auto;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate3d(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.quiz { 
+  display: none;
+    margin-left: 5px;
+    width: 40vw;
+    height: 55vh;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24)
+    0px 3px 8px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.qu {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 45px;
+    text-indent: 120px;
+    margin-top: 20px;
+    margin-left: 75px;
+    width: 25vw;
+    height: 7vh;
+    border-radius: 50px;
+}
+
+hr {
+    margin-top: 20px;
+    width: 25vw;
+    margin-left: 75px;
+}
+
+.quiz h3 {
+     margin-top: 20px;
+    width: 25vw;
+    margin-left: 75px;
+}
+
+.options {
+margin-top: 20px;
+    
+    margin-left: 75px;
+
+}
+
+button {
+    border: none;
+    width: 12vw;
+    height: 4vh;
+    border-radius: 50px;
+    margin: 10px 10px;
+    color: white;
+    background-color: gray;
+}
+
+p {
+    margin-top: 20px;
+    width: 25vw;
+    margin-left: 75px;
+    
+}
+
+
+.scoreDiv {
+  width: 199px;
+  height: 199px;
+  align-content: center;
+  justify-items: center;
+  display: none;
+  line-height: 31px;
+   box-shadow: rgba(0, 0, 0, 0.24)
+    0px 3px 8px;
+}
+
+@media screen and (max-width: 821px) {
+
+
+  .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  padding: 5px 25px; 
+}
+
+  img {
+  display: flex;
+  margin-bottom: 15px;
+   border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+  .left {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(8, 184, 207);
+    width: 45vw;
+    height: 55vh;
+    border: none;
+}
+
+
+/* .left h1 {
+    font-size: 55px;
+    line-height: 60px;
+    color: white;
+    margin-top: 50px;
+    
+} */
+
+.quiz { 
+    margin-left: 5px;
+    width: 75vw;
+    height: 65vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(bbbb.jpeg);
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.qu {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-size: 35px;
+    text-indent: 20px;
+    margin-top: 20px;
+    margin-left: 75px;
+    width: 30vw;
+    height: 5vh;
+    border-radius: 50px;
+}
+
+.quiz h3 {
+  color: white;
+}
+
+}
