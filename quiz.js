@@ -13,7 +13,7 @@ let facebookIcon = document.getElementById("facebook-icon");
 let twitterIcon = document.getElementById("twitter-icon");
 let instagramIcon = document.getElementById("instagram-icon");
 let right = document.getElementById("right");
-let wrong = docment.getElementById("wrong");
+let wrong = document.getElementById("wrong");
 let endgame = document.getElementById("endgame");
 let answerCount = 0;
 
