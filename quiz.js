@@ -12,7 +12,9 @@ let scoreDiv = document.querySelector("scoreDiv")
 let facebookIcon = document.getElementById("facebook-icon");
 let twitterIcon = document.getElementById("twitter-icon");
 let instagramIcon = document.getElementById("instagram-icon");
-
+let right = document.getElementById("right");
+let wrong = docment.getElementById("wrong");
+let endgame = document.getElementById("endgame");
 
 let api =
   "https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple";
@@ -53,6 +55,7 @@ for (const button of buttons) {
 
       button.style.backgroundColor = "green";
       button.style.color = "white";
+      right.play();
       answerCount++;
       setTimeout(() => {
         button.style.backgroundColor = "gray";
@@ -61,6 +64,7 @@ for (const button of buttons) {
     } else {
       button.style.backgroundColor = "red";
       button.style.color = "black";
+      wrong.play("");
       setTimeout(() => {
         button.style.backgroundColor = "gray";
         button.style.color = "white";
@@ -75,12 +79,19 @@ for (const button of buttons) {
        option2.innerHTML = arr[nextQuestion].options[1];
        option3.innerHTML = arr[nextQuestion].options[2];
        option4.innerHTML = arr[nextQuestion].options[3];
-    }, 2000);
+    }, 3000);
     setTimeout(() => {
       if (nextQuestion == 10) {
         quz.style.display = "none"
-        scoreDiv.style.display = "grid"
-        score.innerText = `${answerCount}`
+        progress.style.display = "none"
+        loader.style.display = "flex"
+        
+     setTimeout(() => {
+      endgame.play();
+      loader.style.display = "none"
+       scoreDiv.style.display = "grid";
+       score.innerText = `${answerCount} / 10`;
+     }, 3000);
       }
     }, 3000);
   };
