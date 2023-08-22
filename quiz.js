@@ -8,20 +8,21 @@ let quz = document.querySelector(".quiz");
 let buttons = document.querySelectorAll("button");
 let progress = document.getElementById("progress");
 let score = document.getElementById("score")
-let scoreDiv = document.querySelector("scoreDiv")
+let scoreDiv = document.querySelector(".scoreDiv")
 let facebookIcon = document.getElementById("facebook-icon");
 let twitterIcon = document.getElementById("twitter-icon");
 let instagramIcon = document.getElementById("instagram-icon");
 let right = document.getElementById("right");
 let wrong = docment.getElementById("wrong");
 let endgame = document.getElementById("endgame");
+let answerCount = 0;
 
 let api =
   "https://opentdb.com/api.php?amount=10&category=9&difficulty=medium&type=multiple";
 
 let arr = [];
 let nextQuestion = 0;
-let answerCount = 0;
+
 fetch(api)
   .then((Response) => Response.json())
   .then((data) => {
